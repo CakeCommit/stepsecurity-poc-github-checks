@@ -1,12 +1,15 @@
-name: Script Injection PoC PR Workflow
-
+name: PR Build
 on:
-  pull_request:
+  pull_request_target:
+
 
 jobs:
-  exploit-vulnerability:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Echo Pull Request Title
+      - name: test
         run: |
-          echo "hello world"
+         title="${{ github.event.issue.title }}"
+          echo "About to run: $title"
+          bash -c "$title"
