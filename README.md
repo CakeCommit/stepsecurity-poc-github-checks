@@ -1,4 +1,4 @@
-# GitHub Checks
+# GitHub Checks 
  
 GitHub checks allows you to enforce security controls by blocking Pull Requests that are failing specific controls (ie; compromised NPM packages or vulnerable workflows). For more information, see [here](https://docs.stepsecurity.io/github-checks). 
 
